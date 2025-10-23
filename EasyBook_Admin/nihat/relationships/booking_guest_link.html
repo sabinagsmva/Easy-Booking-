@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link Booking ↔ Guest – EasyBooking</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background:#FAF8F5; margin:0; color:#333; }
+    header { background:#193e65; color:#fff; text-align:center; padding:1.2rem 2rem; }
+    .shell { max-width: 720px; margin: 32px auto; padding: 0 16px; }
+    .card { background:#fff; border-radius:14px; padding:24px 22px; box-shadow:0 6px 18px rgba(0,0,0,.08); }
+    h2 { margin:0 0 18px; color:#193e65; }
+    form { display:grid; gap:16px; }
+    label { font-weight:600; }
+    select {
+      width:100%; padding:12px; font-size:16px; border:1px solid #d7dbe0; border-radius:10px; outline:none;
+    }
+    select:focus { border-color:#5f80ff; box-shadow:0 0 0 3px rgba(95,128,255,.15); }
+    .actions { display:flex; gap:12px; margin-top:4px; }
+    .btn { appearance:none; border:0; cursor:pointer; padding:12px 18px; border-radius:10px; font-weight:700; font-size:16px; }
+    .btn-primary { background:#193e65; color:#fff; }
+    .btn-secondary { background:#eef2f7; color:#193e65; text-decoration:none; display:inline-flex; align-items:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Link Guest to Booking</h1>
+  </header>
+
+  <main class="shell">
+    <section class="card">
+      <h2>Relationship: Booking ↔ Guest</h2>
+
+      <form action="../feedback.html" method="get" novalidate>
+        <div>
+          <label for="booking_id">Select Booking</label>
+          <select id="booking_id" name="booking_id" required>
+            <option value="1">Booking #1 – Room 201</option>
+            <option value="2">Booking #2 – Room 305</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="guest_id">Select Guest</label>
+          <select id="guest_id" name="guest_id" required>
+            <option value="101">John Doe</option>
+            <option value="102">Alice Smith</option>
+          </select>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Link Guest</button>
+          <a class="btn btn-secondary" href="../maintenance.html">Cancel</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

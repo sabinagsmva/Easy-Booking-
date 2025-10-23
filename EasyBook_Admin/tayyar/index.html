@@ -1,0 +1,134 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hotel & Staff Management — Forms</title>
+    <link rel="stylesheet" href="admin-staff.css">
+
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Hotel Staff Management</h1>
+        <p>Use the forms to add staff and hotels, then assign staff to hotels with roles.</p>
+      </header>
+
+      <main class="forms">
+        
+        <section class="card" aria-labelledby="add-staff">
+          <h2 id="add-staff">Add New Staff</h2>
+          <p class="sub">Create a staff record. Integration with your backend can store contact details and availability.</p>
+
+          <form id="staff-form">
+            <div class="row">
+              <div class="col">
+                <label for="staff-first">First name</label>
+                <input id="staff-first" class="input" name="first" placeholder="Jane" required />
+              </div>
+              <div class="col">
+                <label for="staff-last">Last name</label>
+                <input id="staff-last" class="input" name="last" placeholder="Doe" required />
+              </div>
+            </div>
+
+            <label for="staff-email">Email</label>
+            <input id="staff-email" class="input" name="email" type="email" placeholder="jane@example.com" required />
+
+            <label for="staff-role">Default role</label>
+            <select id="staff-role" name="role">
+              <option>Receptionist</option>
+              <option>Housekeeping</option>
+              <option>Manager</option>
+              <option>Maintenance</option>
+            </select>
+
+            <div class="actions">
+              <button class="btn" type="submit">Add Staff</button>
+              <button class="btn ghost" type="button" onclick="document.getElementById('staff-form').reset()">Clear</button>
+            </div>
+          </form>
+        </section>
+
+        
+        <section class="card" aria-labelledby="add-hotel">
+          <h2 id="add-hotel">Add New Hotel</h2>
+          <p class="sub">Create a hotel record with address and contact info.</p>
+
+          <form id="hotel-form">
+            <label for="hotel-name">Hotel name</label>
+            <input id="hotel-name" class="input" name="hotelName" placeholder="Oceanview Hotel" required />
+
+            <label for="hotel-address">Address</label>
+            <input id="hotel-address" class="input" name="address" placeholder="123 Beach Ave" required />
+
+            <label for="hotel-city">City</label>
+            <input id="hotel-city" class="input" name="city" placeholder="Santa Monica" required />
+
+            <div class="row">
+              <div class="col">
+                <label for="hotel-phone">Phone</label>
+                <input id="hotel-phone" class="input" name="phone" placeholder="+1 234 567 890" required />
+              </div>
+              <div class="col">
+                <label for="hotel-email">Email</label>
+                <input id="hotel-email" class="input" name="email" type="email" placeholder="info@hotel.com" required />
+              </div>
+            </div>
+
+            <div class="actions">
+              <button class="btn" type="submit">Add Hotel</button>
+              <button class="btn ghost" type="button" onclick="document.getElementById('hotel-form').reset()">Clear</button>
+            </div>
+          </form>
+        </section>
+
+        
+        <section class="card assign" aria-labelledby="assign-staff">
+          <h2 id="assign-staff">Assign Staff to Hotel</h2>
+          <p class="sub">Select a staff member, choose a hotel, and set their role.</p>
+
+          <form id="assign-form">
+            <label for="assign-staff-select">Staff member</label>
+            <select id="assign-staff-select" name="staff">
+              <option>Jane Doe</option>
+              <option>John Smith</option>
+              <option>Maria Johnson</option>
+            </select>
+
+            <label for="assign-hotel-select">Hotel</label>
+            <select id="assign-hotel-select" name="hotel">
+              <option>Oceanview Hotel</option>
+              <option>Mountain Retreat</option>
+              <option>City Central Inn</option>
+            </select>
+
+            <label for="assign-role">Role</label>
+            <select id="assign-role" name="assignRole">
+              <option>Receptionist</option>
+              <option>Housekeeping</option>
+              <option>Manager</option>
+              <option>Maintenance</option>
+            </select>
+
+            <div class="actions">
+              <button class="btn" type="submit">Assign Staff</button>
+            </div>
+
+            <div class="preview">
+              <p class="label-inline">Preview:</p>
+              <p><strong>Jane Doe</strong> → <em>Oceanview Hotel</em> as <strong>Manager</strong></p>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2025 Hotel Staff Management System — All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

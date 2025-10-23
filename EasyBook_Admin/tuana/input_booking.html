@@ -1,0 +1,51 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header><h1>EasyBooking — Add Booking</h1></header>
+ 
+  <main>
+    <form action="feedback_booking.php" method="POST">
+      <label>Guest ID:
+        <input type="number" name="guest_id" required>
+      </label><br>
+ 
+      <label>Room ID:
+        <input type="number" name="room_id" required>
+      </label><br>
+ 
+      <label>Check-in Date:
+        <input type="date" name="check_in" required>
+      </label><br>
+ 
+      <label>Check-out Date:
+        <input type="date" name="check_out" required>
+      </label><br>
+ 
+      <label>Status:
+        <select name="status">
+          <option value="Pending">Pending</option>
+          <option value="Confirmed">Confirmed</option>
+          <option value="Cancelled">Cancelled</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </label><br>
+ 
+      <input type="submit" value="Add Booking">
+    </form>
+    <a href="maintenance.html">Back to Maintenance</a>
+  </main>
+</body>
+</html>
+ 

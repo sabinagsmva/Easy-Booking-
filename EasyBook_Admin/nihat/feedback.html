@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feedback – EasyBooking</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root { --brand:#193e65; --ink:#333; --bg:#FAF8F5; --card:#fff; }
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink); font-family:'Segoe UI', Arial, sans-serif; }
+    header { background:var(--brand); color:#fff; padding:18px 22px; text-align:center; }
+    header h1 { margin:0; font-size:1.35rem; }
+
+    .shell{ max-width:760px; margin:28px auto; padding:0 18px; }
+    .card{
+      background:var(--card); border-radius:14px; padding:26px 22px;
+      box-shadow: 0 12px 24px rgba(0,0,0,.08); text-align:center;
+    }
+    h2{ color:var(--brand); margin:0 0 8px; }
+    p{ margin:8px 0; font-size:1.05rem; }
+
+    .pill {
+      display:inline-block; margin:10px 0 2px; padding:8px 12px; border-radius:999px;
+      background:#ecf3ff; color:#0f2641; border:1px solid #dbe7ff; font-weight:700;
+    }
+    .actions{ margin-top:16px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+    .btn{
+      text-decoration:none; display:inline-flex; align-items:center; gap:8px;
+      padding:12px 16px; border-radius:10px; font-weight:700; border:1px solid #e3e7f2; background:#fff; color:#193e65;
+      transition: box-shadow .2s ease, transform .06s ease;
+    }
+    .btn:hover{ box-shadow:0 6px 16px rgba(25,62,101,.14); transform: translateY(-1px); }
+  </style>
+</head>
+<body>
+  <header><h1>Operation Feedback</h1></header>
+
+  <main class="shell">
+    <section class="card">
+      <span class="pill">Success</span>
+      <h2>Data submitted successfully</h2>
+      <p>If you arrived here from a form, your input has been recorded.</p>
+      <p>You can return to the admin center or add more records.</p>
+
+      <div class="actions">
+        <a class="btn" href="maintenance.html">← Back to Maintenance</a>
+        <a class="btn" href="index.html">Go to Home</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

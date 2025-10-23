@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add User – EasyBooking</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .admin-shell { max-width: 720px; margin: 32px auto; padding: 0 16px; }
+    .card {
+      background: #fff; border-radius: 14px; padding: 24px 22px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    }
+    .card h2 { margin: 0 0 18px; color: #193e65; }
+    .form-grid { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+    .full { grid-column: 1 / -1; }
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    input, select {
+      width: 100%; padding: 14px 12px; font-size: 16px; line-height: 1.2;
+      border: 1px solid #d7dbe0; border-radius: 10px; outline: none;
+      background: #fff;
+    }
+    input:focus, select:focus { border-color: #5f80ff; box-shadow: 0 0 0 3px rgba(95,128,255,.15); }
+    .actions { display: flex; gap: 12px; margin-top: 16px; }
+    .btn { appearance: none; border: 0; cursor: pointer; padding: 12px 18px; border-radius: 10px; font-weight: 700; font-size: 16px; }
+    .btn-primary { background: #193e65; color: #fff; }
+    .btn-secondary { background: #eef2f7; color: #193e65; text-decoration: none; display: inline-flex; align-items: center; }
+    @media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Add New User</h1>
+    <nav><a href="../maintenance.html">Maintenance</a></nav>
+  </header>
+
+  <main class="admin-shell">
+    <section class="card">
+      <h2>User Account</h2>
+
+      <form action="../feedback.html" method="get" novalidate>
+        <div class="form-grid">
+          <div class="full">
+            <label for="username">Username</label>
+            <input id="username" name="username" required placeholder="e.g., ajohnson" />
+          </div>
+
+          <div class="full">
+            <label for="uemail">Email</label>
+            <input id="uemail" name="email" type="email" required placeholder="e.g., alex@example.com" />
+          </div>
+
+          <div class="full">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required placeholder="Minimum 8 characters" />
+          </div>
+
+          <div class="full">
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+              <option value="guest">Guest</option>
+              <option value="staff">Staff</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Create User</button>
+          <a class="btn btn-secondary" href="../maintenance.html">Cancel</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

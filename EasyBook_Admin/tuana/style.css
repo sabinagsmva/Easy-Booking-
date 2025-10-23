@@ -1,0 +1,159 @@
+
+
+
+
+
+:root {
+  --brand: #193e65;
+  --ink: #333;
+  --bg: #FAF8F5;
+  --card: #fff;
+  --muted: #6b7280;
+  --success: #006b3f;
+  --success-bg: #e8f6ec;
+  --success-border: #9ddbb1;
+  --error: #a10000;
+  --error-bg: #fbeaea;
+  --error-border: #f3b2b2;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--brand);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+form {
+  background: var(--card);
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: var(--brand);
+  outline: none;
+}
+
+form input[type="submit"],
+form button {
+  background-color: var(--brand);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+  background-color: #005c99;
+}
+
+p.success {
+  color: var(--success);
+  background-color: var(--success-bg);
+  border: 1px solid var(--success-border);
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+p.error {
+  color: var(--error);
+  background-color: var(--error-bg);
+  border: 1px solid var(--error-border);
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  background: var(--card);
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+ul li:hover {
+  transform: translateX(5px);
+}
+
+ul li a {
+  color: var(--brand);
+  text-decoration: none;
+  margin-top: 0;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}

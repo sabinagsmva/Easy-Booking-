@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Easy Booking — Add Review</h1>
+    <nav>
+      <a href="maintenance.html">Maintenance</a>
+      <a href="prepaid_bookings_input.html">Prepaid</a>
+    </nav>
+  </header>
+
+  <div class="shell">
+    <div class="card">
+      <h2>Add a Review</h2>
+      <p class="sub">Provide details for a new customer review.</p>
+
+      <form action="reviews_feedback.html" method="POST">
+        <label for="booking_id">Booking:</label>
+        <select id="booking_id" name="booking_id" required>
+          <option value="">Select Booking</option>
+          <option value="1">Booking #1 — John Doe</option>
+        </select>
+
+        <label for="rating">Rating (1–5):</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+
+        <button type="submit">Save Review</button>
+      </form>
+
+      <div class="footer-nav">
+        <a href="maintenance.html" class="btn">← Back to Maintenance</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

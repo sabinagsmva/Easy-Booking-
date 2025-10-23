@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EasyBook – Team Admin Hub</title>
+  <style>
+    :root { --brand:#193e65; --bg:#FAF8F5; --ink:#333; --muted:#6b7280; }
+    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Segoe UI,Arial,sans-serif}
+    header{background:var(--brand);color:#fff;padding:18px 22px;text-align:center}
+    main{max-width:900px;margin:28px auto;padding:0 18px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}}
+    .card{background:#fff;border-radius:14px;padding:22px;border:1px solid #e7e9ee;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+    .card h3{margin:0 0 8px;color:var(--brand)}
+    .card p{margin:0 0 12px;color:var(--muted)}
+    .btn{display:inline-block;text-decoration:none;font-weight:700;color:var(--brand);background:#f5f7fb;border:1px solid #e3e7f2;padding:10px 14px;border-radius:10px}
+    .btn:hover{background:#eef3fb}
+  </style>
+</head>
+<body>
+  <header><h1>EasyBook – Team Admin Hub</h1></header>
+  <main>
+    <div class="grid">
+      <section class="card">
+        <h3> Bookings & Guest</h3>
+        <p>Users, Guests, Booking ↔ Guest</p>
+        <a class="btn" href="nihat/maintenance.html">Open</a>
+      </section>
+
+      <section class="card">
+        <h3> Staff & Hotels</h3>
+        <p>Users, Guests, Booking ↔ Guest</p>
+        <a class="btn" href="tayyar/index.html">Open</a>
+      </section>
+
+      <section class="card">
+        <h3> Reviews & Bookings</h3>
+        <p>Prepaid Bookings, Reviews, Review ↔ Booking</p>
+        <a class="btn" href="sabina/maintenance.html">Open</a>
+      </section>
+      <section class="card">
+        <h3> Bookings & Rooms</h3>
+        <p>Prepaid Bookings, Reviews, Review ↔ Booking</p>
+        <a class="btn" href="tuana/maintenance.html">Open</a>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

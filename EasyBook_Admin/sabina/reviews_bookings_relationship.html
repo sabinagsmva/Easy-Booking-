@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link Reviews & Bookings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Easy Booking — Link Review & Booking</h1>
+    <nav>
+      <a href="maintenance.html">Maintenance</a>
+      <a href="prepaid_bookings_input.html">Bookings</a>
+      <a href="reviews_input.html">Reviews</a>
+    </nav>
+  </header>
+
+  <div class="shell">
+    <div class="card">
+      <h2>Link Review to Booking</h2>
+      <p class="sub">Select which review belongs to which booking.</p>
+
+      <form action="relationship_feedback.html" method="POST">
+        <label for="review_id">Select Review:</label>
+        <select id="review_id" name="review_id" required>
+          <option value="">Select Review</option>
+          <option value="1">Review #1 — “Great stay!”</option>
+          <option value="2">Review #2 — “Room was clean”</option>
+        </select>
+
+        <label for="booking_id">Select Booking:</label>
+        <select id="booking_id" name="booking_id" required>
+          <option value="">Select Booking</option>
+          <option value="101">Booking #101 — John Doe</option>
+          <option value="102">Booking #102 — Sarah Lee</option>
+        </select>
+
+        <label for="note">Relationship Note (optional):</label>
+        <input type="text" id="note" name="note" placeholder="E.g. Review left after checkout">
+
+        <button type="submit">Save Relationship</button>
+      </form>
+
+      <div class="footer-nav">
+        <a href="maintenance.html" class="btn">← Back to Maintenance</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

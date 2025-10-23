@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Prepaid Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Easy Booking — Add Prepaid Booking</h1>
+    <nav>
+      <a href="maintenance.html">Maintenance</a>
+      <a href="reviews_input.html">Reviews</a>
+    </nav>
+  </header>
+
+  <div class="shell">
+    <div class="card">
+      <h2>Add a Prepaid Booking</h2>
+      <p class="sub">Enter details for a new prepaid booking record.</p>
+
+      <form action="prepaid_bookings_feedback.html" method="POST">
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" id="customer_name" name="customer_name" required>
+
+        <label for="room_number">Room Number:</label>
+        <input type="number" id="room_number" name="room_number" required>
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="amount_paid">Amount Paid ($):</label>
+        <input type="number" id="amount_paid" name="amount_paid" required>
+
+        <button type="submit">Save Booking</button>
+      </form>
+
+      <div class="footer-nav">
+        <a href="maintenance.html" class="btn">← Back to Maintenance</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
