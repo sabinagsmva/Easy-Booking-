@@ -1,0 +1,6 @@
+.container { width: 80%; margin: auto; }
+.search-form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; }
+.results-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.results-table th, .results-table td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+.btn, .back-link { padding: 10px; background: #fee600; border: none; text-decoration: none; color: #000; border-radius: 8px; }
+.detail-card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
