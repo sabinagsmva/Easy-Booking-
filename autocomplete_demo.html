@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Autocomplete Demo</title>
+
+  <!-- jQuery + jQuery UI from CDN -->
+  <link rel="stylesheet"
+        href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    label { display:block; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <label for="demo-input">Demo Autocomplete:</label>
+  <input id="demo-input">
+
+  <script>
+    // Static list (from assignment step 2)
+    const tags = [
+      "EasyBooking Hotel",
+      "Seaside Resort",
+      "Campus Inn",
+      "Bremen Central Hotel",
+      "Lakeview Lodge"
+    ];
+
+    $(function() {
+      $("#demo-input").autocomplete({
+        source: tags
+      });
+    });
+  </script>
+</body>
+</html>

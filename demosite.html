@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Autocomplete Demo</title>
+ 
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="../autocomplete.js"></script>
+ 
+  <script>
+    $(function() {
+      const tags = [
+        "Berlin", "Bremen", "Munich", "Hamburg",
+        "Amsterdam", "Prague", "Paris", "Rome",
+        "Vienna", "Budapest"
+      ];
+ 
+      $("#demo").autocomplete({ source: tags });
+    });
+  </script>
+ 
+</head>
+ 
+<body>
+  <h2>Autocomplete Demo</h2>
+  <p>Start typing:</p>
+  <input id="demo">
+  <input type="text" id="city" name="city">
+<input type="text" id="hotel_name" name="hotel_name">
+<input type="text" id="customer_name" name="customer_name">
+<input type="text" id="email" name="email">
+<input type="text" id="room_type" name="room_type">
+ 
+</body>
+</html>
+ 
